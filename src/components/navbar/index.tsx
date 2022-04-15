@@ -1,9 +1,9 @@
 import React, { useContext } from "react"
-import { Link } from "gatsby"
 import styled from "styled-components/macro"
 
 import NavContext from "src/hooks/nav/context"
 import { NavContextProps } from "src/hooks/nav/context"
+import A from "src/templates/Link"
 
 function Navbar() {
   const { isNavButtonClicked } = useContext(NavContext) as NavContextProps
@@ -12,13 +12,13 @@ function Navbar() {
     <NavContainer isNavButtonClicked={isNavButtonClicked}>
       <Ul>
         <Li>
-          <A to="#">About</A>
+          <Link to="#">About</Link>
         </Li>
         <Li>
-          <A to="#">Projects</A>
+          <Link to="#">Projects</Link>
         </Li>
         <Li>
-          <A to="#">Contact</A>
+          <Link to="#">Contact</Link>
         </Li>
       </Ul>
     </NavContainer>
@@ -52,13 +52,7 @@ const Ul = styled.ul`
 
 const Li = styled.li``
 
-const A = styled(Link)`
-  color: #66fcf1;
-  font-family: "Montserrat";
-  font-size: 4rem;
-  font-weight: 500;
-  position: relative;
-  text-decoration: none;
+const Link = styled(A)`
   transition: all 0.5s;
 
   &:hover {
