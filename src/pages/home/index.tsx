@@ -8,7 +8,7 @@ function Home() {
   return (
     <Section>
       <H1>Hi, I'm Michael Loewe Alivio</H1>
-      <P>I'm a developer situated on Philippines — honing my coding skills.</P>
+      <P>A Frontend Web & Mobile Developer from Cebu, Philippines</P>
     </Section>
   )
 }
@@ -28,7 +28,7 @@ const fromLeft = keyframes`
 const Section = styled.section`
   display: flex;
   flex-direction: column;
-  animation: ${fromLeft} 2.5s ease;
+  animation: ${fromLeft} 2s ease;
 `
 
 const H1 = styled.h1`
