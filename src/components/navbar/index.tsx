@@ -26,7 +26,7 @@ function Navbar() {
 }
 
 const NavContainer = styled.nav<{ isNavButtonClicked: boolean }>`
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: #0b0c10;
   z-index: 2;
   width: 100vw;
   height: 100vh;
@@ -53,7 +53,7 @@ const Ul = styled.ul`
 const Li = styled.li``
 
 const A = styled(Link)`
-  color: white;
+  color: #66fcf1;
   font-family: "Montserrat";
   font-size: 4rem;
   font-weight: 500;

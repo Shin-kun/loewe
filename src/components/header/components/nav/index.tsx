@@ -23,7 +23,7 @@ function Nav() {
 const FirstNavBarIcon = styled.span`
   width: 100%;
   border-radius: 25px;
-  background-color: #0b0c10;
+  background-color: #45a29e;
   height: 3px;
   transition: 0.5s;
 `
@@ -54,14 +54,12 @@ const NavButton = styled.button.attrs(props => ({
     width: 100%;
     transform: rotate(-45deg);
     top: 10px;
-    background-color: #66fcf1;
     position: absolute;
   }
 
   &.open ${SecondNavBarIcon} {
     transform: rotate(45deg);
     top: 10px;
-    background-color: #66fcf1;
     position: absolute;
   }
 `
