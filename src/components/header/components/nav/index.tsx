@@ -1,4 +1,5 @@
 import React, { useContext } from "react"
+import { keyframes } from "styled-components"
 
 import styled from "styled-components/macro"
 import NavContext from "src/hooks/nav/context"
@@ -32,9 +33,22 @@ const SecondNavBarIcon = styled(FirstNavBarIcon)`
   width: 60%;
 `
 
+const fromRight = keyframes`
+   from {
+     opacity: 0;
+     transform: translateX(100%);
+   }
+ 
+   to {
+     opacity: 1;
+     transform: translateX(0);
+   }
+ `
+
 const NavButton = styled.button.attrs(props => ({
   className: props.className,
 }))`
+  animation: ${fromRight} 2.5s ease;
   height: 24px;
   width: 50px;
   cursor: pointer;
