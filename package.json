@@ -6,6 +6,7 @@
   "author": "Michael Loewe Alivio <mathews.kyle@gmail.com>",
   "dependencies": {
     "@fontsource/montserrat": "^4.5.7",
+    "@types/react-helmet": "^6.1.5",
     "gatsby": "^4.12.1",
     "gatsby-plugin-gatsby-cloud": "^4.12.1",
     "gatsby-plugin-image": "^2.12.1",
