@@ -14,10 +14,10 @@ function Header() {
 const Container = styled.header`
   display: flex;
   width: 100%;
-  padding: 2rem;
-  position: fixed;
-  display: flex;
+  padding: 3rem;
+  position: sticky;
   justify-content: flex-end;
+  z-index: 3;
 `
 
 export default Header

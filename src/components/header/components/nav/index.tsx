@@ -7,7 +7,7 @@ import { NavContextProps } from "src/hooks/nav/context"
 const ShortHamburgerBar = styled.span`
   width: 40%;
   height: 3px;
-  background-color: black;
+  background-color: #0b0c10;
   border-radius: 25px;
 `
 
@@ -22,7 +22,7 @@ const CloseBar = styled.i`
   display: inline-block;
   height: 3px;
   width: 100%;
-  background-color: white;
+  background-color: #66fcf1;
   border-radius: 25px;
 `
 
@@ -38,7 +38,6 @@ const NavButton = styled.button`
   height: 50px;
   width: 50px;
   cursor: pointer;
-  z-index: 2;
   background-color: transparent;
   border-color: transparent;
   border-style: solid;
@@ -57,9 +56,9 @@ const Close = styled(NavButton)`
 `
 
 function Nav() {
-  const { isNavButtonClicked, onNavButtonClicked } = useContext(
-    NavContext
-  ) as NavContextProps
+  const navContext = useContext(NavContext)
+  const { isNavButtonClicked, onNavButtonClicked } =
+    navContext as NavContextProps
 
   return (
     <>
