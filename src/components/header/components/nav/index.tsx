@@ -4,77 +4,66 @@ import styled from "styled-components/macro"
 import NavContext from "src/hooks/nav/context"
 import { NavContextProps } from "src/hooks/nav/context"
 
-const ShortHamburgerBar = styled.span`
-  width: 40%;
-  height: 3px;
-  background-color: #0b0c10;
-  border-radius: 25px;
-`
-
-const LongHamburgerBar = styled(ShortHamburgerBar)`
-  width: 100%;
-`
-
-const CloseBar = styled.i`
-  position: absolute;
-  top: calc(50% - 1px);
-  left: 0;
-  display: inline-block;
-  height: 3px;
-  width: 100%;
-  background-color: #66fcf1;
-  border-radius: 25px;
-`
-
-const CloseBarLeft = styled(CloseBar)`
-  transform: rotate(-45deg);
-`
-
-const CloseBarRight = styled(CloseBar)`
-  transform: rotate(45deg);
-`
-
-const NavButton = styled.button`
-  height: 50px;
-  width: 50px;
-  cursor: pointer;
-  background-color: transparent;
-  border-color: transparent;
-  border-style: solid;
-`
-
-const Hamburger = styled(NavButton)`
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  justify-content: space-between;
-  height: 25px;
-`
-
-const Close = styled(NavButton)`
-  position: relative;
-`
-
 function Nav() {
   const navContext = useContext(NavContext)
   const { isNavButtonClicked, onNavButtonClicked } =
     navContext as NavContextProps
 
   return (
-    <>
-      {!isNavButtonClicked ? (
-        <Hamburger onClick={onNavButtonClicked}>
-          <ShortHamburgerBar />
-          <LongHamburgerBar />
-        </Hamburger>
-      ) : (
-        <Close onClick={onNavButtonClicked}>
-          <CloseBarLeft />
-          <CloseBarRight />
-        </Close>
-      )}
-    </>
+    <NavButton
+      className={isNavButtonClicked ? "open" : ""}
+      onClick={onNavButtonClicked}
+    >
+      <FirstNavBarIcon />
+      <SecondNavBarIcon />
+    </NavButton>
   )
 }
+
+const FirstNavBarIcon = styled.span`
+  width: 100%;
+  border-radius: 25px;
+  background-color: #0b0c10;
+  height: 3px;
+  transition: 0.5s;
+`
+
+const SecondNavBarIcon = styled(FirstNavBarIcon)`
+  width: 60%;
+`
+
+const NavButton = styled.button.attrs(props => ({
+  className: props.className,
+}))`
+  height: 24px;
+  width: 50px;
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+
+  &.open {
+    height: 50px;
+  }
+
+  &.open ${FirstNavBarIcon} {
+    width: 100%;
+    transform: rotate(-45deg);
+    top: 10px;
+    background-color: #66fcf1;
+    position: absolute;
+  }
+
+  &.open ${SecondNavBarIcon} {
+    transform: rotate(45deg);
+    top: 10px;
+    background-color: #66fcf1;
+    position: absolute;
+  }
+`
 
 export default Nav
