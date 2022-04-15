@@ -6,36 +6,43 @@
  */
 
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import styled from "styled-components/macro"
 
 import Header from "../header"
 import "./styles.css"
 
-const Layout: React.FC<React.PropsWithChildren<any>> = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+interface LayoutProps {
+  className?: string
+}
 
+const Layout: React.FC<React.PropsWithChildren<LayoutProps>> = ({
+  className,
+  children,
+}) => {
   return (
-    <>
+    <Container className={className}>
       <Header />
-      <div
+      <ContainerWithMargin
         style={{
           margin: `0 auto`,
           maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main>{children}</main>
-      </div>
-    </>
+        <Main>{children}</Main>
+      </ContainerWithMargin>
+    </Container>
   )
 }
+
+const Container = styled.div``
+
+const Main = styled.main``
+
+const ContainerWithMargin = styled.div`
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 1.0875rem 1.45rem;
+`
 
 export default Layout

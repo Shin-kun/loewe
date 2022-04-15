@@ -1,4 +1,5 @@
 import * as React from "react"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -12,12 +13,19 @@ const IndexPage = () => {
 
   return (
     <NavContext.Provider value={{ isNavButtonClicked, onNavButtonClicked }}>
-      <Layout>
+      <Seo title="Home" />
+      <Container>
         <Navbar />
         <Home />
-      </Layout>
+      </Container>
     </NavContext.Provider>
   )
 }
+
+const Container = styled(Layout)`
+  background-color: #0b0c10;
+  height: 100vh;
+  width: 100vw;
+`
 
 export default IndexPage
