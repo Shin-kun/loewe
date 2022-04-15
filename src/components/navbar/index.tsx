@@ -34,10 +34,12 @@ const NavContainer = styled.nav<{ isNavButtonClicked: boolean }>`
   top: 0;
   left: 0;
   transition: 0.75s;
-  opacity: ${({ isNavButtonClicked }) => (isNavButtonClicked ? 1 : 0)};
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  opacity: ${({ isNavButtonClicked }) => (isNavButtonClicked ? 1 : 0)};
+  visibility: ${({ isNavButtonClicked }) =>
+    isNavButtonClicked ? "visible" : "hidden"};
 `
 
 const Ul = styled.ul`
