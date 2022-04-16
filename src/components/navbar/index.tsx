@@ -12,7 +12,7 @@ function Navbar() {
     <NavContainer isNavButtonClicked={isNavButtonClicked}>
       <Ul>
         <Li>
-          <Link to="#">About</Link>
+          <Link to="/about">About</Link>
         </Li>
         <Li>
           <Link to="#">Projects</Link>
