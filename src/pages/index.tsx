@@ -4,7 +4,7 @@ import { keyframes } from "styled-components"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import Home from "./home"
+import { Home } from "./home"
 import { colors } from "src/theme"
 
 const IndexPage = () => {

@@ -4,7 +4,7 @@ import { keyframes } from "styled-components"
 
 import { colors } from "src/theme"
 
-function Home() {
+export function Home() {
   return (
     <Section>
       <H1>Hi, I'm Michael Loewe Alivio</H1>
@@ -45,5 +45,3 @@ const H5 = styled.h5`
   color: ${colors.text};
   line-height: 1.5;
 `
-
-export default Home
