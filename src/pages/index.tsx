@@ -35,7 +35,7 @@ const Container = styled(Layout)`
   height: 100vh;
   width: 100vw;
   transform-origin: 0% bottom;
-  animation: ${fromBottom} 0.75s ease;
+  animation: ${fromBottom} 2s ease;
 `
 
 export default IndexPage

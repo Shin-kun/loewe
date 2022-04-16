@@ -59,7 +59,7 @@ const Container = styled(Layout)`
   height: 100vh;
   width: 100vw;
   transform-origin: 0% top;
-  animation: ${fromTop} 0.75s ease;
+  animation: ${fromTop} 2s ease;
   overflow: auto;
   overflow-x: hidden;
 `
