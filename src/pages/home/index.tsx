@@ -8,7 +8,7 @@ function Home() {
   return (
     <Section>
       <H1>Hi, I'm Michael Loewe Alivio</H1>
-      <P>A Frontend Web & Mobile Developer from Cebu, Philippines</P>
+      <H5>A Frontend Web & Mobile Developer from Cebu, Philippines</H5>
     </Section>
   )
 }
@@ -33,16 +33,17 @@ const Section = styled.section`
 
 const H1 = styled.h1`
   font-family: "Montserrat";
-  font-size: 6rem;
-  font-weight: 600;
+  font-size: 7rem;
+  font-weight: bold;
   color: ${colors.hyperlink};
 `
 
-const P = styled.p`
+const H5 = styled.h5`
   font-family: "Roboto";
   font-size: 2rem;
   font-weight: normal;
   color: ${colors.text};
+  line-height: 1.5;
 `
 
 export default Home
