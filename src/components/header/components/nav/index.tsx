@@ -59,6 +59,7 @@ const NavButton = styled.button.attrs(props => ({
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  outline: none;
 
   &.open {
     height: 50px;
