@@ -27,7 +27,7 @@ function Navbar() {
 
 const NavContainer = styled.nav<{ isNavButtonClicked: boolean }>`
   background-color: #1f2833;
-  z-index: 2;
+  z-index: 20;
   width: 100vw;
   height: 100vh;
   position: fixed;

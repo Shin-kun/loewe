@@ -18,7 +18,7 @@ const Container = styled.header`
   position: sticky;
   background-color: transparent;
   justify-content: flex-end;
-  z-index: 3;
+  z-index: 21;
 `
 
 export default Header
