@@ -71,32 +71,32 @@ const Li = styled.li`
 `
 
 const Link = styled(A)`
+  width: fit-content;
   font-size: 2.5rem;
   color: ${colors.buttons};
   transition: all 0.5s;
+  text-transform: uppercase;
 
   &:hover {
     cursor: pointer;
-    font-style: italic;
+    font-size: 4rem;
   }
 `
 
 const fromBottom = keyframes`
   from {
     opacity: 0;
-    transform: scaleY(0);
+    transform: translateY(100%);
   }
 
   to {
     opacity: 1;
-    transform: scaleY(1);
+    transform: translateY(0);
   }
 `
 
 const Container = styled(Layout)`
   background-color: ${colors.primary};
-  height: 100vh;
-  width: 100vw;
   transform-origin: 0% bottom;
   animation: ${fromBottom} 2s ease;
   overflow: auto;
