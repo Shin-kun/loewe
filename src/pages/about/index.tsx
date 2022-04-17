@@ -4,17 +4,19 @@ import { keyframes } from "styled-components"
 
 import Layout from "src/components/layout"
 import { colors } from "src/theme"
+import H1 from "src/templates/H1"
+import H5 from "src/templates/H5"
 import Text from "src/components/Text"
 
 function About() {
   return (
     <Container>
       <MainSection>
-        <H1>About</H1>
-        <H5>
+        <Title>About</Title>
+        <Heading>
           I'm Loewe, a Front-end web and hybrid-mobile developer based in Cebu,
           Philippines.
-        </H5>
+        </Heading>
         <Text>
           Ever since I took up my course in Computer Science in UP Cebu
           (University of the Philippines), I was able to at least equip myself
@@ -71,19 +73,11 @@ const MainSection = styled.section`
   text-align: justify;
 `
 
-const H1 = styled.h1`
-  font-family: "Montserrat";
-  font-size: 7rem;
-  font-weight: 900;
-  color: ${colors.hyperlink};
+const Title = styled(H1)`
   animation: ${fromLeft} 1.5s ease;
 `
 
-const H5 = styled.h5`
-  font-family: "Montserrat";
-  font-size: 2.25rem;
-  font-weight: 700;
-  color: ${colors.text};
+const Heading = styled(H5)`
   animation: ${fromLeft} 2s ease;
   line-height: 1.5;
   margin-bottom: 5rem;
