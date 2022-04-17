@@ -111,7 +111,6 @@ const JobOverviewSummary = styled(Text)`
 `
 
 const Paragraph = styled(JobOverviewSummary)`
-  font-family: "Montserrat";
   text-align: justify;
 `
 

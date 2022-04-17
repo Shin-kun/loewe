@@ -36,6 +36,7 @@ const Text: React.FC<React.PropsWithChildren<TextProps>> = ({
 }
 
 const Paragraph = styled(P)`
+  font-family: "Montserrat";
   line-height: 1.5;
   margin-bottom: 3rem;
   opacity: 0;
