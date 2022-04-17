@@ -24,11 +24,8 @@ function Projects() {
             <Date>Feb 2018 - Aug 2018</Date>
           </Li>
           <Li>
-            <Link to="#">Kyocera Linux driver</Link>
+            <Link to="/projects/kyocera">Kyocera</Link>
             <Date>2019 - Now</Date>
-          </Li>
-          <Li>
-            <Link to="#">Others</Link>
           </Li>
         </Ul>
       </MainSection>
