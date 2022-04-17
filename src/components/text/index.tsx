@@ -1,13 +1,16 @@
 import React, { useRef, useEffect } from "react"
 import styled from "styled-components/macro"
 
-import { colors } from "src/theme"
+import P from "src/templates/P"
 
 interface TextProps {
   className?: string
 }
 
-const Text: React.FC<React.PropsWithChildren<TextProps>> = ({ children }) => {
+const Text: React.FC<React.PropsWithChildren<TextProps>> = ({
+  className,
+  children,
+}) => {
   const ref = useRef(null)
 
   const observer = new IntersectionObserver(intersectionObserverCallback, {
@@ -25,14 +28,14 @@ const Text: React.FC<React.PropsWithChildren<TextProps>> = ({ children }) => {
     observer.observe(ref.current!)
   })
 
-  return <P ref={ref}>{children}</P>
+  return (
+    <Paragraph className={className} ref={ref}>
+      {children}
+    </Paragraph>
+  )
 }
 
-const P = styled.p`
-  font-family: "Roboto";
-  font-size: 1.5rem;
-  font-weight: 100;
-  color: ${colors.text};
+const Paragraph = styled(P)`
   line-height: 1.5;
   margin-bottom: 3rem;
   opacity: 0;
