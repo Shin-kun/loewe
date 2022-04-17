@@ -95,6 +95,7 @@ const Heading = styled(H5)`
   text-align: justify;
   margin-bottom: 2rem;
   color: ${colors.buttons};
+  animation: ${fromLeft} 2s ease;
 `
 
 const JobOverviewHeading = styled(Text)`
