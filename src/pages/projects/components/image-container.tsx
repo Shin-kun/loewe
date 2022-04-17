@@ -19,6 +19,9 @@ export const ImageContainer: React.FC<
   function intersectionObserverCallback(entries: IntersectionObserverEntry[]) {
     entries.forEach(entry => {
       entry.target.classList.toggle("show", entry.isIntersecting)
+      if (entry.isIntersecting) {
+        observer.unobserve(entry.target)
+      }
     })
   }
 
@@ -37,6 +40,7 @@ const Container = styled.div`
   z-index: 9;
   border-radius: 20px;
   background-color: white;
+  align-self: center;
   display: flex;
   align-items: center;
   justify-content: center;
