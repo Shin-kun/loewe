@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react"
+import { colors } from "src/theme"
 import styled from "styled-components/macro"
 
 interface ImageContainerProps {
@@ -41,7 +42,7 @@ const Container = styled.div`
   justify-content: center;
   padding: 1rem;
   width: fit-content;
-
+  box-shadow: 0 20px 50px 0 ${colors.primary};
   opacity: 0;
   transform: translateX(-100px);
   transition: transform 1s, opacity 1s;
