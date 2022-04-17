@@ -39,11 +39,17 @@ const Layout: React.FC<React.PropsWithChildren<LayoutProps>> = ({
             <Navbar />
             {children}
           </Main>
+          <Empty />
         </ContainerWithMargin>
       </NavContext.Provider>
     </Container>
   )
 }
+
+const Empty = styled.div`
+  width: 100%;
+  padding: 2rem;
+`
 
 const Container = styled.div`
   height: 100vh;
