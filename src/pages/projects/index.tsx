@@ -6,19 +6,21 @@ import Layout from "src/components/layout"
 import H1 from "src/templates/H1"
 import A from "src/templates/Link"
 import { colors } from "src/theme"
+import Seo from "src/components/seo"
 
 function Projects() {
   return (
     <Container>
+      <Seo title="Projects" />
       <MainSection>
         <Title>Projects</Title>
         <Ul>
           <Li>
-            <Link to="/projects/cpha">CPHA Online Registration</Link>
+            <Link to="/projects/cpha">CPHA</Link>
             <Date>2018 - 2020</Date>
           </Li>
           <Li>
-            <Link to="#">CSTC Branch</Link>
+            <Link to="/projects/cstc">CSTC</Link>
             <Date>Feb 2018 - Aug 2018</Date>
           </Li>
           <Li>
