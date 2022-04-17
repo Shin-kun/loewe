@@ -14,7 +14,7 @@ function Projects() {
         <Title>Projects</Title>
         <Ul>
           <Li>
-            <Link to="#">CPHA Online Registration</Link>
+            <Link to="/projects/cpha">CPHA Online Registration</Link>
             <Date>2018 - 2020</Date>
           </Li>
           <Li>
