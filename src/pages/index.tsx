@@ -32,8 +32,6 @@ const fromBottom = keyframes`
 
 const Container = styled(Layout)`
   background-color: ${colors.primary};
-  height: 100vh;
-  width: 100vw;
   transform-origin: 0% bottom;
   animation: ${fromBottom} 2s ease;
 `
