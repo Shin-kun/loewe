@@ -82,7 +82,7 @@ const Link = styled(A)`
   }
 
   @media ${device.mobileM} {
-    &.hover {
+    &:hover {
       cursor: pointer;
       font-size: 4rem;
     }
