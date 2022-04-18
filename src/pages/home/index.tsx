@@ -3,12 +3,16 @@ import styled from "styled-components/macro"
 import { keyframes } from "styled-components"
 
 import { colors, device } from "src/theme"
+import H1 from "src/templates/H1"
+import H5 from "src/templates/H5"
 
 export function Home() {
   return (
     <Section>
-      <H1>Hi, I'm Michael Loewe Alivio</H1>
-      <H5>A Frontend Web & Mobile Developer from Cebu, Philippines</H5>
+      <Heading>Hi, I'm Michael Loewe Alivio</Heading>
+      <SubHeading>
+        A Frontend Web & Mobile Developer from Cebu, Philippines
+      </SubHeading>
     </Section>
   )
 }
@@ -32,8 +36,7 @@ const Section = styled.section`
   justify-content: space-evenly;
 `
 
-const H1 = styled.h1`
-  font-family: "Montserrat";
+const Heading = styled(H1)`
   font-weight: bold;
   color: ${colors.hyperlink};
   font-size: 4rem;
@@ -44,11 +47,8 @@ const H1 = styled.h1`
   }
 `
 
-const H5 = styled.h5`
-  font-family: "Roboto";
-  font-size: 2rem;
+const SubHeading = styled(H5)`
   font-weight: normal;
-  color: ${colors.text};
   line-height: 1.5;
   animation: ${fromLeft} 2.5s ease;
 `
