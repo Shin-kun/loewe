@@ -5,7 +5,7 @@ import { keyframes } from "styled-components"
 import Layout from "src/components/layout"
 import H1 from "src/templates/H1"
 import A from "src/templates/Link"
-import { colors } from "src/theme"
+import { colors, device } from "src/theme"
 import Seo from "src/components/seo"
 
 function Projects() {
@@ -78,7 +78,18 @@ const Link = styled(A)`
 
   &:hover {
     cursor: pointer;
-    font-size: 4rem;
+    font-size: 3rem;
+  }
+
+  @media ${device.mobileM} {
+    &.hover {
+      cursor: pointer;
+      font-size: 4rem;
+    }
+  }
+
+  @media ${device.tablet} {
+    font-size: 3rem;
   }
 `
 
@@ -104,7 +115,15 @@ const Container = styled(Layout)`
 const MainSection = styled.section`
   display: flex;
   flex-direction: column;
+  width: 85vw;
+
+  @media ${device.laptop} {
+    width: 960px;
+  }
+
+  @media ${device.laptopL} {
+    width: 1400px;
+  }
 `
 
 export default Projects
-
