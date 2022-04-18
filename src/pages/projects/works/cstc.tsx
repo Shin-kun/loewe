@@ -18,8 +18,7 @@ function Cstc() {
       <HeaderSection>
         <Title>CSTC</Title>
         <Heading>
-          An inventory platform system that I helped built using AngularJS,
-          HTML/CSS, Jquery, etc.
+          An inventory platform system that I helped built using AngularJS.
         </Heading>
       </HeaderSection>
       <Overview>
@@ -32,6 +31,12 @@ function Cstc() {
             <JobOverviewHeading>Responsibilities</JobOverviewHeading>
             <JobOverviewSummary>
               Code Reviewing, CSS, Unit testing, Coding
+            </JobOverviewSummary>
+          </JobOverviewSubSection>
+          <JobOverviewSubSection>
+            <JobOverviewHeading>Technologies</JobOverviewHeading>
+            <JobOverviewSummary>
+              Angular 6, HTML / CSS, Jasmine & Sinon, Jquery.
             </JobOverviewSummary>
           </JobOverviewSubSection>
         </JobOverviewSection>

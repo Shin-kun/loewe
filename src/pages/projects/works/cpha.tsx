@@ -22,8 +22,7 @@ function Cpha() {
       <HeaderSection>
         <Title>CPHA</Title>
         <Heading>
-          A registration web application system I helped built using Angular 6,
-          HTML, CSS, etc.
+          A registration web application system I helped built using Angular 6.
         </Heading>
       </HeaderSection>
       <Overview>
@@ -36,6 +35,12 @@ function Cpha() {
             <JobOverviewHeading>Responsibilities</JobOverviewHeading>
             <JobOverviewSummary>
               Code Reviewing, CSS, Unit testing, Webflow setup
+            </JobOverviewSummary>
+          </JobOverviewSubSection>
+          <JobOverviewSubSection>
+            <JobOverviewHeading>Technologies</JobOverviewHeading>
+            <JobOverviewSummary>
+              Angular 6, HTML / CSS, Jasmine & Sinon.
             </JobOverviewSummary>
           </JobOverviewSubSection>
         </JobOverviewSection>
