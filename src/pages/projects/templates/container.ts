@@ -3,13 +3,6 @@ import styled from "styled-components/macro"
 import { colors, device } from "src/theme"
 import Layout from "src/components/layout"
 
-export const TitleContainer = styled.div`
-  display: flex;
-  align-items: flex-end;
-  padding-top: 15%;
-  margin-bottom: 3rem;
-`
-
 export const Overview = styled.section`
   display: flex;
   flex-direction: column;
