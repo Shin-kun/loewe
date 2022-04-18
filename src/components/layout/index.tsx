@@ -12,6 +12,7 @@ import Header from "../header"
 import NavContext from "src/hooks/nav/context"
 import useNav from "src/hooks/nav"
 import Navbar from "src/components/navbar"
+import Footer from "../footer"
 import "./styles.css"
 import { device } from "src/theme"
 
@@ -35,6 +36,7 @@ const Layout: React.FC<React.PropsWithChildren<LayoutProps>> = ({
             {children}
           </Main>
         </ContainerWithMargin>
+        <Footer />
       </NavContext.Provider>
     </Container>
   )
@@ -74,3 +76,8 @@ const ContainerWithMargin = styled.div`
 `
 
 export default Layout
+
+/* border-top-style: solid;
+  border-top-color: ${colors.text};
+  border-top-width: 1px; */
+/* margin-top: 1.5rem; */
