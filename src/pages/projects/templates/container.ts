@@ -1,6 +1,6 @@
 import styled from "styled-components/macro"
 
-import { colors } from "src/theme"
+import { colors, device } from "src/theme"
 import Layout from "src/components/layout"
 
 export const TitleContainer = styled.div`
@@ -18,7 +18,13 @@ export const Overview = styled.section`
 
 export const JobOverviewSection = styled.section`
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
+  gap: 2rem;
+
+  @media ${device.laptop} {
+    flex-direction: row;
+  }
 `
 
 export const JobOverviewSubSection = styled.div`

@@ -10,25 +10,25 @@ import H5 from "src/templates/H5"
 import Text from "src/components/text"
 import { ImageContainer } from "../components/image-container"
 import {
-  TitleContainer,
   Overview,
   JobOverviewSection,
   JobOverviewSubSection,
 } from "../templates/container"
 import { Container } from "../components/container"
+import { HeaderSection } from "src/templates/section"
 
 function Cpha() {
   return (
     <Container>
       <Seo title="CPHA Online Registration" />
-      <TitleContainer>
-        <Title>CPHA Online Registration</Title>
-      </TitleContainer>
-      <Overview>
+      <HeaderSection>
+        <Title>CPHA</Title>
         <Heading>
           A registration web application system I helped built using Angular 6,
           HTML, CSS, etc.
         </Heading>
+      </HeaderSection>
+      <Overview>
         <JobOverviewSection>
           <JobOverviewSubSection>
             <JobOverviewHeading>Role</JobOverviewHeading>
@@ -42,11 +42,10 @@ function Cpha() {
           </JobOverviewSubSection>
         </JobOverviewSection>
         <Paragraph>
-          As the name suggests, the CPHA Online Registration system is a web
-          application platform for tracking the records of the members of Cebu
-          Pharmacists Association, Inc. It serves as a centralized platform in
-          recording their members' registration information, events attended,
-          etc.
+          The CPHA Online Registration system is a web application platform for
+          tracking the records of the members of Cebu Pharmacists Association,
+          Inc. It serves as a centralized platform in recording their members'
+          registration information, events attended, etc.
         </Paragraph>
         <ImageContainer>
           <StaticImage
@@ -89,13 +88,16 @@ const fromLeft = keyframes`
 
 const Title = styled(H1)`
   animation: ${fromLeft} 1.5s ease;
+  font-style: italic;
+  flex: 1;
 `
 
 const Heading = styled(H5)`
-  text-align: justify;
+  text-align: start;
   margin-bottom: 2rem;
   color: ${colors.buttons};
   animation: ${fromLeft} 2s ease;
+  flex: 1;
 `
 
 const JobOverviewHeading = styled(Text)`
@@ -104,6 +106,7 @@ const JobOverviewHeading = styled(Text)`
   text-decoration: underline;
   text-transform: uppercase;
   margin-bottom: 1rem;
+  letter-spacing: 3px;
 `
 
 const JobOverviewSummary = styled(Text)`

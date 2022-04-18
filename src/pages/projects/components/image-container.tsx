@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react"
-import { colors } from "src/theme"
+import { colors, device } from "src/theme"
 import styled from "styled-components/macro"
 
 interface ImageContainerProps {
@@ -44,12 +44,16 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
+  padding: 0.5rem;
   width: fit-content;
   box-shadow: 0 20px 50px 0 ${colors.primary};
   opacity: 0;
-  transform: translateX(-100px);
+  transform: translateX(-10px);
   transition: transform 1s, opacity 1s;
+
+  @media ${device.laptop} {
+    transform: translateX(-50px);
+  }
 
   &.show {
     opacity: 1;
