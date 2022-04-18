@@ -7,14 +7,14 @@ import Seo from "../components/seo"
 import { Home } from "./home"
 import { colors } from "src/theme"
 
+// 720px should be the minimum for desktop
+
 const IndexPage = () => {
   return (
-    <>
+    <Container>
       <Seo title="Home" />
-      <Container>
-        <Home />
-      </Container>
-    </>
+      <Home />
+    </Container>
   )
 }
 
@@ -34,6 +34,7 @@ const Container = styled(Layout)`
   background-color: ${colors.primary};
   transform-origin: 0% bottom;
   animation: ${fromBottom} 2s ease;
+  overflow: auto;
 `
 
 export default IndexPage

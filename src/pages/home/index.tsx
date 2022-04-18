@@ -2,7 +2,7 @@ import * as React from "react"
 import styled from "styled-components/macro"
 import { keyframes } from "styled-components"
 
-import { colors } from "src/theme"
+import { colors, device } from "src/theme"
 
 export function Home() {
   return (
@@ -26,16 +26,22 @@ const fromLeft = keyframes`
 `
 
 const Section = styled.section`
+  flex: 1;
   display: flex;
   flex-direction: column;
-  animation: ${fromLeft} 2s ease;
+  justify-content: space-evenly;
 `
 
 const H1 = styled.h1`
   font-family: "Montserrat";
-  font-size: 7rem;
   font-weight: bold;
   color: ${colors.hyperlink};
+  font-size: 4rem;
+  animation: ${fromLeft} 1.5s ease;
+
+  @media ${device.laptop} {
+    font-size: 7rem;
+  }
 `
 
 const H5 = styled.h5`
@@ -44,4 +50,5 @@ const H5 = styled.h5`
   font-weight: normal;
   color: ${colors.text};
   line-height: 1.5;
+  animation: ${fromLeft} 2.5s ease;
 `
