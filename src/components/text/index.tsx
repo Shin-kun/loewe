@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react"
 import styled from "styled-components/macro"
 
 import P from "src/templates/P"
+import { device } from "src/theme"
 
 interface TextProps {
   className?: string
@@ -40,8 +41,12 @@ const Paragraph = styled(P)`
   line-height: 1.5;
   margin-bottom: 3rem;
   opacity: 0;
-  transform: translateX(-100px);
+  transform: translateX(-10px);
   transition: transform 1s, opacity 1s;
+
+  @media ${device.laptop} {
+    transform: translateX(-50px);
+  }
 
   &.show {
     opacity: 1;
