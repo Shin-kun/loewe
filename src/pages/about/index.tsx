@@ -8,6 +8,7 @@ import H1 from "src/templates/H1"
 import H5 from "src/templates/H5"
 import Text from "src/components/Text"
 import Seo from "src/components/seo"
+import { HeaderSection } from "src/templates/section"
 
 function About() {
   return (
@@ -38,13 +39,6 @@ function About() {
     </Container>
   )
 }
-
-const HeaderSection = styled.section`
-  display: flex;
-  flex-direction: column;
-  height: 90vh;
-  margin-bottom: 1.5rem;
-`
 
 const fromLeft = keyframes`
   from {
