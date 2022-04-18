@@ -7,10 +7,12 @@ import { colors } from "src/theme"
 import H1 from "src/templates/H1"
 import H5 from "src/templates/H5"
 import Text from "src/components/Text"
+import Seo from "src/components/seo"
 
 function About() {
   return (
     <Container>
+      <Seo title="About" />
       <MainSection>
         <HeaderSection>
           <Title>About</Title>
@@ -89,6 +91,7 @@ const Title = styled(H1)`
 
 const Heading = styled(H5)`
   animation: ${fromLeft} 2s ease;
+  text-align: start;
   line-height: 1.5;
 `
 
