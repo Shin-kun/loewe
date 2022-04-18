@@ -1076,6 +1076,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/anton@^4.5.6":
+  version "4.5.6"
+  resolved "https://registry.yarnpkg.com/@fontsource/anton/-/anton-4.5.6.tgz#4df99809ed4f0aa685a8ff6ed1f2ef345cd90a67"
+  integrity sha512-gaHU9g2eDUDFZvln4DNpZGvGlHovLkbHh//eDNzQ7veYjVVCixc3pxqRA1g+p72NdCbRL8ba7FupBmTZ4T163w==
+
 "@fontsource/lora@^4.5.6":
   version "4.5.6"
   resolved "https://registry.yarnpkg.com/@fontsource/lora/-/lora-4.5.6.tgz#f564c0be3e609efd158306fc15fac524ef048ca2"

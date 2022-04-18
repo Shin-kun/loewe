@@ -8,3 +8,4 @@
 import "@fontsource/montserrat"
 import "@fontsource/roboto"
 import "@fontsource/lora"
+import "@fontsource/anton"

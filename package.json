@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Michael Loewe Alivio <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@fontsource/anton": "^4.5.6",
     "@fontsource/lora": "^4.5.6",
     "@fontsource/montserrat": "^4.5.7",
     "@fontsource/roboto": "^4.5.5",
