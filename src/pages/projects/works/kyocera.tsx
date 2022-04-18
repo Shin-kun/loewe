@@ -3,12 +3,11 @@ import styled from "styled-components/macro"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Seo from "src/components/seo"
-import A from "src/templates/Link"
+import { InlineLink } from "src/templates/Link"
 import { Container } from "../components/container"
-import { colors, device } from "src/theme"
+import { device } from "src/theme"
 import { ImageContainer } from "../components/image-container"
 import {
-  TitleContainer,
   Overview,
   JobOverviewSection,
   JobOverviewSubSection,
@@ -79,24 +78,16 @@ const CompanyLinkContainer = styled(JobOverviewSubSection)`
   align-items: center;
 `
 
-const Link = styled(A)`
-  width: fit-content;
-  font-size: 2rem;
-  font-weight: 700;
-  color: ${colors.hyperlink};
+const Link = styled(InlineLink)`
   padding: 1rem;
-  border-radius: 2rem;
-  transition: all 0.5s;
+  /* transition: all 0.5s; */
 
   @media ${device.tablet} {
     font-size: 3rem;
   }
 
   &:hover {
-    cursor: pointer;
     font-size: 3.25rem;
-    /* text-decoration: line-through;
-    text-decoration-thickness: 5px; */
   }
 `
 
