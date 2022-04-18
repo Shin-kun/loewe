@@ -3,11 +3,7 @@ import styled from "styled-components/macro"
 import { keyframes } from "styled-components"
 import { StaticImage } from "gatsby-plugin-image"
 
-import { colors } from "src/theme"
 import Seo from "src/components/seo"
-import H1 from "src/templates/H1"
-import H5 from "src/templates/H5"
-import Text from "src/components/text"
 import { ImageContainer } from "../components/image-container"
 import {
   Overview,
@@ -16,6 +12,8 @@ import {
 } from "../templates/container"
 import { Container } from "../components/container"
 import { HeaderSection } from "src/templates/section"
+import { Title, Heading, JobOverviewHeading } from "../templates/heading"
+import { Paragraph, JobOverviewSummary } from "../templates/paragraph"
 
 function Cpha() {
   return (
@@ -73,48 +71,5 @@ function Cpha() {
     </Container>
   )
 }
-
-const fromLeft = keyframes`
-  from {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-`
-
-const Title = styled(H1)`
-  animation: ${fromLeft} 1.5s ease;
-  font-style: italic;
-  flex: 1;
-`
-
-const Heading = styled(H5)`
-  text-align: start;
-  margin-bottom: 2rem;
-  color: ${colors.buttons};
-  animation: ${fromLeft} 2s ease;
-  flex: 1;
-`
-
-const JobOverviewHeading = styled(Text)`
-  font-size: 1rem;
-  font-weight: bold;
-  text-decoration: underline;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  letter-spacing: 3px;
-`
-
-const JobOverviewSummary = styled(Text)`
-  font-size: 1rem;
-  font-weight: 400;
-  margin: 0;
-`
-
-const Paragraph = styled(JobOverviewSummary)``
 
 export default Cpha
