@@ -7,8 +7,6 @@ import Seo from "../components/seo"
 import { Home } from "./home"
 import { colors } from "src/theme"
 
-// 720px should be the minimum for desktop
-
 const IndexPage = () => {
   return (
     <Container>
