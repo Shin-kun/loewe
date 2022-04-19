@@ -6,6 +6,5 @@
 
 // You can delete this file if you're not using it
 import "@fontsource/montserrat"
-import "@fontsource/roboto"
 import "@fontsource/lora"
 import "@fontsource/anton"
