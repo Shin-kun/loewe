@@ -18,7 +18,7 @@ import { Paragraph, JobOverviewSummary } from "../templates/paragraph"
 function Cpha() {
   return (
     <Container>
-      <Seo title="CPHA Online Registration" />
+      <Seo title="CPHA" />
       <HeaderSection>
         <Title>CPHA</Title>
         <Heading>
