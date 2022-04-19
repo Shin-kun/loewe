@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components/macro"
 
-import P from "src/styled-components/P"
+import P from "src/styled-components/common/P"
 import { device } from "src/theme"
 
 function Footer() {

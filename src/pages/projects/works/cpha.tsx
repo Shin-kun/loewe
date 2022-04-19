@@ -2,23 +2,23 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Seo from "src/components/seo"
-import { ImageContainer } from "src/components/projects/components/image-container"
+import { ImageContainer } from "src/styled-components/projects/components/image-container"
 import {
   Overview,
   JobOverviewSection,
   JobOverviewSubSection,
-} from "src/components/projects/styled-components/container"
-import { Container } from "src/components/projects/components/container"
-import { HeaderSection } from "src/styled-components/section"
+} from "src/styled-components/projects/styled-components/container"
+import { Container } from "src/styled-components/projects/components/container"
+import { HeaderSection } from "src/styled-components/common/section"
 import {
   Title,
   Heading,
   JobOverviewHeading,
-} from "src/components/projects/styled-components/heading"
+} from "src/styled-components/projects/styled-components/heading"
 import {
   Paragraph,
   JobOverviewSummary,
-} from "src/components/projects/styled-components/paragraph"
+} from "src/styled-components/projects/styled-components/paragraph"
 
 function Cpha() {
   return (

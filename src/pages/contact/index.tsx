@@ -3,9 +3,9 @@ import styled from "styled-components/macro"
 import { keyframes } from "styled-components"
 
 import Layout from "src/components/layout"
-import H1 from "src/styled-components/H1"
-import P from "src/styled-components/P"
-import { InlineLink } from "src/styled-components/Link"
+import H1 from "src/styled-components/common/H1"
+import P from "src/styled-components/common/P"
+import { InlineLink } from "src/styled-components/common/Link"
 import { colors, device } from "src/theme"
 
 function Contact() {

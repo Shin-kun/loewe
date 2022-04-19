@@ -1,6 +1,6 @@
 import * as React from "react"
-import H1 from "src/styled-components/H1"
-import P from "src/styled-components/P"
+import H1 from "src/styled-components/common/H1"
+import P from "src/styled-components/common/P"
 import { colors, device } from "src/theme"
 import styled, { keyframes } from "styled-components"
 

@@ -4,8 +4,8 @@ import { keyframes } from "styled-components"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import H1 from "src/styled-components/H1"
-import H5 from "src/styled-components/H5"
+import H1 from "src/styled-components/common/H1"
+import H5 from "src/styled-components/common/H5"
 import { colors, device } from "src/theme"
 
 const IndexPage = () => {

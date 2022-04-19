@@ -2,7 +2,7 @@ import React, { useContext } from "react"
 import styled from "styled-components/macro"
 
 import Nav from "./components/nav"
-import A from "src/styled-components/Link"
+import A from "src/styled-components/common/Link"
 import NavContext from "src/hooks/nav/context"
 import { NavContextProps } from "src/hooks/nav/context"
 import { device } from "src/theme"

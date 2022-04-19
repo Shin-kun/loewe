@@ -3,7 +3,7 @@ import styled from "styled-components/macro"
 
 import NavContext from "src/hooks/nav/context"
 import { NavContextProps } from "src/hooks/nav/context"
-import A from "src/styled-components/Link"
+import A from "src/styled-components/common/Link"
 
 function Navbar() {
   const { isNavButtonClicked } = useContext(NavContext) as NavContextProps
