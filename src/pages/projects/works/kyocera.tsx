@@ -11,10 +11,14 @@ import {
   Overview,
   JobOverviewSection,
   JobOverviewSubSection,
-} from "../templates/container"
+} from "../styled-components/container"
 import { HeaderSection } from "src/styled-components/section"
-import { Title, Heading, JobOverviewHeading } from "../templates/heading"
-import { Paragraph, JobOverviewSummary } from "../templates/paragraph"
+import {
+  Title,
+  Heading,
+  JobOverviewHeading,
+} from "../styled-components/heading"
+import { Paragraph, JobOverviewSummary } from "../styled-components/paragraph"
 
 function Kyocera() {
   return (

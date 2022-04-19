@@ -1,6 +1,6 @@
 import React from "react"
 
-import { MainContainer, MainSection } from "../templates/container"
+import { MainContainer, MainSection } from "../styled-components/container"
 
 interface ContainerProps {
   className?: string
