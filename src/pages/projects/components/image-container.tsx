@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react"
+import React from "react"
 import { colors, device } from "src/theme"
 import styled from "styled-components/macro"
 
@@ -6,28 +6,34 @@ interface ImageContainerProps {
   className?: string
 }
 
+const { useEffect, useRef, useState } = React
+
 export const ImageContainer: React.FC<
   React.PropsWithChildren<ImageContainerProps>
 > = ({ className, children }) => {
-  const ref = useRef(null)
-
-  const observer = new IntersectionObserver(intersectionObserverCallback, {
-    root: ref.current,
-    threshold: 1,
-  })
+  let observer: IntersectionObserver | undefined = undefined
+  const ref = useRef() as any
 
   function intersectionObserverCallback(entries: IntersectionObserverEntry[]) {
     entries.forEach(entry => {
       entry.target.classList.toggle("show", entry.isIntersecting)
       if (entry.isIntersecting) {
-        observer.unobserve(entry.target)
+        ;(observer as IntersectionObserver).unobserve(entry.target)
       }
     })
   }
 
   useEffect(() => {
-    observer.observe(ref.current!)
-  })
+    observer = new IntersectionObserver(intersectionObserverCallback, {
+      threshold: 1,
+    })
+  }, [])
+
+  useEffect(() => {
+    if (observer) {
+      observer.observe(ref.current!)
+    }
+  }, [ref])
 
   return (
     <Container ref={ref} className={className}>

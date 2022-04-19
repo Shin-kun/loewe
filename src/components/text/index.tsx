@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react"
+import React from "react"
 import styled from "styled-components/macro"
 
 import P from "src/styled-components/P"
@@ -8,16 +8,14 @@ interface TextProps {
   className?: string
 }
 
+const { useRef, useEffect, useState } = React
+
 const Text: React.FC<React.PropsWithChildren<TextProps>> = ({
   className,
   children,
 }) => {
-  const ref = useRef(null)
-
-  const observer = new IntersectionObserver(intersectionObserverCallback, {
-    root: ref.current,
-    threshold: 1,
-  })
+  let observer: IntersectionObserver | undefined = undefined
+  const ref = useRef() as any
 
   function intersectionObserverCallback(entries: IntersectionObserverEntry[]) {
     entries.forEach(entry => {
@@ -26,8 +24,16 @@ const Text: React.FC<React.PropsWithChildren<TextProps>> = ({
   }
 
   useEffect(() => {
-    observer.observe(ref.current!)
-  })
+    observer = new IntersectionObserver(intersectionObserverCallback, {
+      threshold: 1,
+    })
+  }, [])
+
+  useEffect(() => {
+    if (observer) {
+      observer.observe(ref.current!)
+    }
+  }, [ref])
 
   return (
     <Paragraph className={className} ref={ref}>
