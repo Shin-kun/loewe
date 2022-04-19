@@ -3,7 +3,7 @@ import styled from "styled-components/macro"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Seo from "src/components/seo"
-import { InlineLink } from "src/templates/Link"
+import { InlineLink } from "src/styled-components/Link"
 import { Container } from "../components/container"
 import { device } from "src/theme"
 import { ImageContainer } from "../components/image-container"
@@ -12,7 +12,7 @@ import {
   JobOverviewSection,
   JobOverviewSubSection,
 } from "../templates/container"
-import { HeaderSection } from "src/templates/section"
+import { HeaderSection } from "src/styled-components/section"
 import { Title, Heading, JobOverviewHeading } from "../templates/heading"
 import { Paragraph, JobOverviewSummary } from "../templates/paragraph"
 

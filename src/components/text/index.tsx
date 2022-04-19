@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react"
 import styled from "styled-components/macro"
 
-import P from "src/templates/P"
+import P from "src/styled-components/P"
 import { device } from "src/theme"
 
 interface TextProps {

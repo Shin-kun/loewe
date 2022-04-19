@@ -4,11 +4,11 @@ import { keyframes } from "styled-components"
 
 import Layout from "src/components/layout"
 import { colors } from "src/theme"
-import H1 from "src/templates/H1"
-import H5 from "src/templates/H5"
+import H1 from "src/styled-components/H1"
+import H5 from "src/styled-components/H5"
 import Text from "src/components/Text"
 import Seo from "src/components/seo"
-import { HeaderSection } from "src/templates/section"
+import { HeaderSection } from "src/styled-components/section"
 
 function About() {
   return (

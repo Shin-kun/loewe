@@ -11,7 +11,7 @@ import {
   JobOverviewSubSection,
 } from "../templates/container"
 import { Container } from "../components/container"
-import { HeaderSection } from "src/templates/section"
+import { HeaderSection } from "src/styled-components/section"
 import { Title, Heading, JobOverviewHeading } from "../templates/heading"
 import { Paragraph, JobOverviewSummary } from "../templates/paragraph"
 
