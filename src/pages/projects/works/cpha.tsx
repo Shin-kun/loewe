@@ -1,23 +1,24 @@
 import React from "react"
-import styled from "styled-components/macro"
-import { keyframes } from "styled-components"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Seo from "src/components/seo"
-import { ImageContainer } from "../components/image-container"
+import { ImageContainer } from "src/components/projects/components/image-container"
 import {
   Overview,
   JobOverviewSection,
   JobOverviewSubSection,
-} from "../styled-components/container"
-import { Container } from "../components/container"
+} from "src/components/projects/styled-components/container"
+import { Container } from "src/components/projects/components/container"
 import { HeaderSection } from "src/styled-components/section"
 import {
   Title,
   Heading,
   JobOverviewHeading,
-} from "../styled-components/heading"
-import { Paragraph, JobOverviewSummary } from "../styled-components/paragraph"
+} from "src/components/projects/styled-components/heading"
+import {
+  Paragraph,
+  JobOverviewSummary,
+} from "src/components/projects/styled-components/paragraph"
 
 function Cpha() {
   return (

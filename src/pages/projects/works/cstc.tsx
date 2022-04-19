@@ -1,19 +1,22 @@
 import React from "react"
 
-import { Container } from "../components/container"
+import { Container } from "src/components/projects/components/container"
 import {
   Overview,
   JobOverviewSection,
   JobOverviewSubSection,
-} from "../styled-components/container"
+} from "src/components/projects/styled-components/container"
 import Seo from "src/components/seo"
 import { HeaderSection } from "src/styled-components/section"
 import {
   Title,
   Heading,
   JobOverviewHeading,
-} from "../styled-components/heading"
-import { Paragraph, JobOverviewSummary } from "../styled-components/paragraph"
+} from "src/components/projects/styled-components/heading"
+import {
+  Paragraph,
+  JobOverviewSummary,
+} from "src/components/projects/styled-components/paragraph"
 
 function Cstc() {
   return (
