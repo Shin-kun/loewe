@@ -1,10 +1,6 @@
 import React from "react"
 
-import {
-  MainContainer,
-  TitleContainer,
-  MainSection,
-} from "../templates/container"
+import { MainContainer, MainSection } from "../templates/container"
 
 interface ContainerProps {
   className?: string
