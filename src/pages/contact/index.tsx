@@ -12,7 +12,7 @@ function Contact() {
   return (
     <Layout>
       <MainSection>
-        <Title>Contact</Title>
+        <H1>Contact</H1>
         <Paragraph>
           Contact me here.
           <br />
@@ -26,38 +26,9 @@ function Contact() {
   )
 }
 
-const fromTop = keyframes`
-  from {
-    opacity: 0;
-    transform: scaleY(0);
-  }
-
-  to {
-    opacity: 1;
-    transform: scaleY(1);
-  }
-`
-
-const fromLeft = keyframes`
-  from {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-`
-
-const Title = styled(H1)`
-  animation: ${fromLeft} 1.5s ease;
-`
-
 const Paragraph = styled(P)`
   font-size: 1rem;
   margin: 0;
-  animation: ${fromLeft} 2s ease;
 `
 
 const Link = styled(InlineLink)`

@@ -1,19 +1,19 @@
 import React from "react"
 import styled from "styled-components/macro"
-import { keyframes } from "styled-components"
 
 import Layout from "src/components/layout"
 import H1 from "src/styled-components/common/H1"
 import A from "src/styled-components/common/Link"
-import { colors, device } from "src/theme"
+import { animation, colors, device } from "src/theme"
 import Seo from "src/components/seo"
+import P from "src/styled-components/common/P"
 
 function Projects() {
   return (
     <Layout>
       <Seo title="Projects" />
       <MainSection>
-        <Title>Projects</Title>
+        <H1>Projects</H1>
         <Ul>
           <Li>
             <Link to="/projects/cpha">CPHA</Link>
@@ -33,23 +33,7 @@ function Projects() {
   )
 }
 
-const fromLeft = keyframes`
-  from {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-`
-
-const Title = styled(H1)`
-  animation: ${fromLeft} 1.5s ease;
-`
-
-const Date = styled.p`
+const Date = styled(P)`
   font-family: "Montserrat";
   font-size: 1rem;
   font-weight: 100;
@@ -73,7 +57,7 @@ const Link = styled(A)`
   width: fit-content;
   font-size: 2.5rem;
   color: ${colors.buttons};
-  transition: all 0.5s;
+  animation: ${animation.fade};
   text-transform: uppercase;
 
   &:hover {
