@@ -57,6 +57,7 @@ const Link = styled(A)`
   width: fit-content;
   font-size: 2.5rem;
   color: ${colors.buttons};
+  transition: all 0.5s;
   animation: ${animation.fade};
   text-transform: uppercase;
 
