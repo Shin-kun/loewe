@@ -7,11 +7,17 @@ import { colors } from "src/theme"
 
 const { useState, useEffect } = React
 
-function Preloader(path: string) {
+interface PreloaderProps {
+  path: string
+}
+
+function Preloader({ path }: PreloaderProps) {
   const [isRouteChanged, setIsRouteChanged] = useState(false)
+  const [key, setKey] = useState("")
 
   useEffect(() => {
     setIsRouteChanged(!isRouteChanged)
+    setKey(getId())
   }, [path])
 
   function getId() {
@@ -19,7 +25,7 @@ function Preloader(path: string) {
     return id
   }
 
-  return <PreloaderContainer key={getId()} isRouteChanged={isRouteChanged} />
+  return <PreloaderContainer key={key} isRouteChanged={isRouteChanged} />
 }
 
 const slider = keyframes`
