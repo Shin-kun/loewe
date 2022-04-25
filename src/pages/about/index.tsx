@@ -43,7 +43,6 @@ const MainSection = styled.section`
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
-  text-align: justify;
 `
 
 const SubHeading = styled(H5)`
