@@ -87,7 +87,6 @@ const CompanyLinkContainer = styled(JobOverviewSubSection)`
 
 const Link = styled(InlineLink)`
   padding: 1rem;
-  /* transition: all 0.5s; */
 
   @media ${device.tablet} {
     font-size: 3rem;
