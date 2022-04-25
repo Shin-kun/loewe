@@ -14,7 +14,7 @@ function Header() {
   return (
     <Container>
       <HomeLink isNavButtonClicked={isNavButtonClicked} to="/">
-        LW
+        Home
       </HomeLink>
       <Nav />
     </Container>
@@ -37,8 +37,9 @@ const Container = styled.header`
 `
 
 const HomeLink = styled(A)<{ isNavButtonClicked: boolean }>`
-  font-family: "Anton";
+  font-family: "Montserrat";
   font-size: 2rem;
+  text-transform: uppercase;
 
   visibility: ${({ isNavButtonClicked }) =>
     isNavButtonClicked ? "hidden" : "visible"};

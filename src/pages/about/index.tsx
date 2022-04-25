@@ -1,9 +1,7 @@
 import React from "react"
 import styled from "styled-components/macro"
-import { keyframes } from "styled-components"
 
 import Layout from "src/components/layout"
-import { colors } from "src/theme"
 import H1 from "src/styled-components/common/H1"
 import H5 from "src/styled-components/common/H5"
 import Text from "src/components/text"
@@ -12,80 +10,46 @@ import { HeaderSection } from "src/styled-components/common/section"
 
 function About() {
   return (
-    <Container>
+    <Layout>
       <Seo title="About" />
       <MainSection>
         <HeaderSection>
-          <Title>About</Title>
-          <Heading>
-            I'm Loewe, a Front-end web and hybrid-mobile developer based in
-            Cebu, Philippines.
-          </Heading>
+          <H1>About</H1>
+          <SubHeading>
+            I'm Loewe, a frontend web and hybrid-mobile developer based in Cebu,
+            Philippines.
+          </SubHeading>
         </HeaderSection>
         <Text>
-          Ever since I took up my course in Computer Science in UP Cebu
-          (University of the Philippines), I was able to at least equip myself
-          on some fundamentals in both low and high level programming languages.
+          I'm a Computer Science graduate from the University of the
+          Philippines, Cebu. During my college years, I was able to take on a
+          part-time job in developing web applications for small to medium
+          enterprises which further strengthened my skills.
         </Text>
         <Text>
-          During my college years, I took up a part-time job in developing web
-          applications for small to medium enterprises.
+          Since then, I am passionate, keen to details, innovative, & dependable
+          when given a task/project. Fast forward to 2022, I've focused my
+          expertise on various web & mobile technologies — React, React Native,
+          HTML/CSS etc.
         </Text>
         <Text>
-          Fast forward to 2022, I've since then focused my expertise on frontend
-          web and mobile hybrid tech — React, React Native, HTML/CSS etc.
+          Apart from my current full-time job, I've also applied for another
+          part-time job in helping establish a startup company. I have since
+          been its tech lead in the web & mobile frontend development.
         </Text>
       </MainSection>
-    </Container>
+    </Layout>
   )
 }
-
-const fromLeft = keyframes`
-  from {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-`
-
-const fromTop = keyframes`
-  from {
-    opacity: 0;
-    transform: scaleY(0);
-  }
-
-  to {
-    opacity: 1;
-    transform: scaleY(1);
-  }
-`
-
-const Container = styled(Layout)`
-  background-color: ${colors.primary};
-  transform-origin: 0% top;
-  animation: ${fromTop} 2s ease;
-  overflow: auto;
-  overflow-x: hidden;
-`
 
 const MainSection = styled.section`
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
-  text-align: justify;
 `
 
-const Title = styled(H1)`
-  animation: ${fromLeft} 1.5s ease;
-`
-
-const Heading = styled(H5)`
-  animation: ${fromLeft} 2s ease;
-  text-align: start;
+const SubHeading = styled(H5)`
+  font-weight: normal;
   line-height: 1.5;
 `
 

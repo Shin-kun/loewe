@@ -25,7 +25,7 @@ function Cstc() {
       <HeaderSection>
         <Title>CSTC</Title>
         <Heading>
-          An inventory platform system that I helped built using AngularJS.
+          An inventory platform system that I helped build using AngularJS.
         </Heading>
       </HeaderSection>
       <Overview>
@@ -48,15 +48,17 @@ function Cstc() {
           </JobOverviewSubSection>
         </JobOverviewSection>
         <Paragraph>
-          CSTC Solutions is a platform web-mobile system that helps keeping
-          track records of shipment/goods to different branches from various
+          CSTC Solutions is a web-mobile platform system that helps keep track
+          records of shipment or goods in different branches from varoius
           warehouses that were owned by Choithram Sons Trading Corporation.
         </Paragraph>
         <Paragraph>
-          For this particular project, I handled front-end web using the classic
-          angularjs and jquery for user interactions. Unfortunately, I cannot
-          display a sample of this project due to the server having been
-          deployed in the CSTC office and not through cloud.
+          For this particular project, I handled frontend web using the classic
+          angularjs and jquery for user interactions.
+        </Paragraph>
+        <Paragraph>
+          Unfortunately, I cannot display a sample of this project due to the
+          server having been deployed in the CSTC office and not through cloud.
         </Paragraph>
       </Overview>
     </Container>

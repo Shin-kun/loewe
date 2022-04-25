@@ -1,0 +1,14 @@
+.preloader-active #preloader {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0B0C10;
+}
+
+#preloader {
+  z-index: 9999;
+  display: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+}

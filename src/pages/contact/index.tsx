@@ -10,62 +10,28 @@ import { colors, device } from "src/theme"
 
 function Contact() {
   return (
-    <Container>
+    <Layout>
       <MainSection>
-        <Title>Contact</Title>
+        <H1>Contact</H1>
         <Paragraph>
           Contact me here.
           <br />
           <br />
-          Email: <Link to="#">loewe.alivio@gmail.com</Link>
+          Email:{" "}
+          <Link to="mailto:loewe.alivio@gmail.com">loewe.alivio@gmail.com</Link>
           <br />
-          On the internet: <Link to="#">Github</Link>
+          On the internet: <Link to="https://github.com/Shin-kun">Github</Link>
+          <br />
+          Phone number: <Link to="tel:+639688533748">+639688533748</Link>
         </Paragraph>
       </MainSection>
-    </Container>
+    </Layout>
   )
 }
-
-const fromTop = keyframes`
-  from {
-    opacity: 0;
-    transform: scaleY(0);
-  }
-
-  to {
-    opacity: 1;
-    transform: scaleY(1);
-  }
-`
-
-const Container = styled(Layout)`
-  background-color: ${colors.primary};
-  transform-origin: 0% bottom;
-  animation: ${fromTop} 2s ease;
-  overflow: auto;
-  overflow-x: hidden;
-`
-
-const fromLeft = keyframes`
-  from {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-`
-
-const Title = styled(H1)`
-  animation: ${fromLeft} 1.5s ease;
-`
 
 const Paragraph = styled(P)`
   font-size: 1rem;
   margin: 0;
-  animation: ${fromLeft} 2s ease;
 `
 
 const Link = styled(InlineLink)`

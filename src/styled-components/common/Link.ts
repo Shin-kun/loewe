@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import { colors } from "src/theme"
 
 const A = styled(Link)`
-  color: #66fcf1;
+  color: ${colors.buttons};
   font-family: "Montserrat";
   font-size: 4rem;
   font-weight: 500;

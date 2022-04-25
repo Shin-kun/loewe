@@ -1,62 +1,25 @@
 import * as React from "react"
 import H1 from "src/styled-components/common/H1"
 import P from "src/styled-components/common/P"
-import { colors, device } from "src/theme"
-import styled, { keyframes } from "styled-components"
+import styled from "styled-components/macro"
 
 import Layout from "../../components/layout"
 import Seo from "../../components/seo"
+import { device } from "src/theme"
 
 const NotFoundPage = () => (
-  <Container>
+  <Layout>
     <Seo title="404: Not found..." />
     <MainSection>
-      <Title>404</Title>
+      <H1>404</H1>
       <Paragraph>You just hit a route that doesn't exist... 😞</Paragraph>
     </MainSection>
-  </Container>
+  </Layout>
 )
-
-const fromTop = keyframes`
-  from {
-    opacity: 0;
-    transform: scaleY(0);
-  }
-
-  to {
-    opacity: 1;
-    transform: scaleY(1);
-  }
-`
-
-const Container = styled(Layout)`
-  background-color: ${colors.primary};
-  transform-origin: 0% bottom;
-  animation: ${fromTop} 2s ease;
-  overflow: auto;
-  overflow-x: hidden;
-`
-
-const fromLeft = keyframes`
-  from {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-`
-
-const Title = styled(H1)`
-  animation: ${fromLeft} 1.5s ease;
-`
 
 const Paragraph = styled(P)`
   font-size: 1rem;
   margin: 0;
-  animation: ${fromLeft} 2s ease;
 `
 
 const MainSection = styled.section`

@@ -14,7 +14,7 @@ import useNav from "src/hooks/nav"
 import Navbar from "src/components/navbar"
 import Footer from "../footer"
 import "./styles.css"
-import { device } from "src/theme"
+import { colors, device } from "src/theme"
 
 interface LayoutProps {
   className?: string
@@ -42,17 +42,14 @@ const Layout: React.FC<React.PropsWithChildren<LayoutProps>> = ({
   )
 }
 
-const Empty = styled.div`
-  width: 100%;
-  padding: 2rem;
-`
-
 const Container = styled.div`
+  background-color: ${colors.primary};
   height: 100vh;
   width: 100vw;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  overflow: auto;
 `
 
 const Main = styled.main`

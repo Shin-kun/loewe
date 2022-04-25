@@ -59,12 +59,12 @@ function Kyocera() {
         </ImageContainer>
         <Paragraph>
           Right after I graduated college, I decided to explore other desktop
-          technologies especially C++ which I previously learned before tackling
-          web programming. Kyocera gave me the opportunity to explore and
-          maintain existing code base such as their Linux driver product.
+          technologies especially C++ which I previously learned before web
+          programming. Kyocera gave me the opportunity to explore and maintain
+          existing code base such as their Linux driver product.
         </Paragraph>
         <Paragraph>
-          Over the past few years, I've been tasked in cleaning up some bugs and
+          Over the past few years, I've been tasked in cleaning up bugs and
           support new features that were in demand by the customers.
         </Paragraph>
         <CompanyLinkContainer>
@@ -87,7 +87,6 @@ const CompanyLinkContainer = styled(JobOverviewSubSection)`
 
 const Link = styled(InlineLink)`
   padding: 1rem;
-  /* transition: all 0.5s; */
 
   @media ${device.tablet} {
     font-size: 3rem;
