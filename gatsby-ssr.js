@@ -7,7 +7,7 @@ exports.onRenderBody = ({
 }) => {
   setPreBodyComponents([<div id="preloader"></div>])
   setHeadComponents([
-    <link as="script" rel="prerender" href="/scripts/preloader.js" />,
+    <link as="script" rel="preload" href="/scripts/preloader.js" />,
   ])
   setPostBodyComponents([<script src="/scripts/preloader.js" />])
 }
