@@ -15,11 +15,11 @@ function About() {
       <Seo title="About" />
       <MainSection>
         <HeaderSection>
-          <Title>About</Title>
-          <Heading>
+          <H1>About</H1>
+          <SubHeading>
             I'm Loewe, a Front-end web and hybrid-mobile developer based in
             Cebu, Philippines.
-          </Heading>
+          </SubHeading>
         </HeaderSection>
         <Text>
           Ever since I took up my course in Computer Science in UP Cebu
@@ -39,18 +39,6 @@ function About() {
   )
 }
 
-const fromLeft = keyframes`
-  from {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-`
-
 const MainSection = styled.section`
   display: flex;
   flex-direction: column;
@@ -58,13 +46,8 @@ const MainSection = styled.section`
   text-align: justify;
 `
 
-const Title = styled(H1)`
-  animation: ${fromLeft} 1.5s ease;
-`
-
-const Heading = styled(H5)`
-  animation: ${fromLeft} 2s ease;
-  text-align: start;
+const SubHeading = styled(H5)`
+  font-weight: normal;
   line-height: 1.5;
 `
 
