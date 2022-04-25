@@ -21,6 +21,8 @@ function Contact() {
           <Link to="mailto:loewe.alivio@gmail.com">loewe.alivio@gmail.com</Link>
           <br />
           On the internet: <Link to="https://github.com/Shin-kun">Github</Link>
+          <br />
+          Phone number: <Link to="tel:+639688533748">+639688533748</Link>
         </Paragraph>
       </MainSection>
     </Layout>
