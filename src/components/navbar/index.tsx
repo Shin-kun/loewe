@@ -4,6 +4,7 @@ import styled from "styled-components/macro"
 import NavContext from "src/hooks/nav/context"
 import { NavContextProps } from "src/hooks/nav/context"
 import A from "src/styled-components/common/Link"
+import { device } from "src/theme"
 
 function Navbar() {
   const { isNavButtonClicked } = useContext(NavContext) as NavContextProps
@@ -53,15 +54,21 @@ const Ul = styled.ul`
 const Li = styled.li``
 
 const Link = styled(A)`
+  font-size: 3rem;
   transition: all 0.5s;
 
   &:hover {
     cursor: pointer;
-    font-size: 6rem;
+    font-size: 4rem;
   }
 
-  &:hover::after {
-    width: 100%;
+  @media ${device.tablet} {
+    font-size: 4rem;
+
+    &:hover {
+      cursor: pointer;
+      font-size: 5rem;
+    }
   }
 `
 
