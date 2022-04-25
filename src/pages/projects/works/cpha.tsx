@@ -27,7 +27,7 @@ function Cpha() {
       <HeaderSection>
         <Title>CPHA</Title>
         <Heading>
-          A registration web application system I helped built using Angular 6.
+          A registration web application system I helped build using Angular 6.
         </Heading>
       </HeaderSection>
       <Overview>
@@ -50,10 +50,11 @@ function Cpha() {
           </JobOverviewSubSection>
         </JobOverviewSection>
         <Paragraph>
-          The CPHA Online Registration system is a web application platform for
-          tracking the records of the members of Cebu Pharmacists Association,
+          The CPHA Online Registration system is a web application platform that
+          tracks the records of the members of cebu Pharmacists Association,
           Inc. It serves as a centralized platform in recording their members'
-          registration information, events attended, etc.
+          registration ifnromation, events attended, and other relevant
+          information.
         </Paragraph>
         <ImageContainer>
           <StaticImage
@@ -66,16 +67,16 @@ function Cpha() {
           />
         </ImageContainer>
         <Paragraph>
-          I took this job back when I was in my 3rd year of college to polish my
-          skills in web programming. It was a challenge for me back then to
-          tackle and learn the fundamentals in Javascript due to my prior
-          knowledge and background in OOP in my first few years in Computer
-          Science — moreso when I was cramming HTML/CSS.
+          I was in 3rd year college when I pursued this project with the goal to
+          polish my skills in web programming. Back then, I figured it was
+          challenging to tackle and learn the fundamentals in Javascript due to
+          my prior knowledge and background in OOOP during my first few years in
+          Computer Science — also especially when I was learning basic HTML/CSS.
         </Paragraph>
         <Paragraph>
-          At the same time, this was also the job that helped me learn the most
-          in the applications of web programming—REST, Reactive programming,
-          Webflow, etc.
+          Despite that, this was the job that equipped me with valuable
+          learnings on the applications of web programming — REST, Reactive
+          programming, Webflow and among others.
         </Paragraph>
       </Overview>
     </Container>
