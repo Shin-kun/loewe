@@ -1,10 +1,9 @@
-var preloader = document.querySelector("#preloader")
+var body = document.querySelector("body")
 
 document.onreadystatechange = function () {
   if (document.readyState === "complete") {
-    preloader.classList.add("preloader-ready")
-    setTimeout(function () {
-      preloader.classList.remove("preloader-ready")
-    }, 500)
+    setTimeout(() => {
+      body.classList.remove("preloader-active")
+    }, 100)
   }
 }
