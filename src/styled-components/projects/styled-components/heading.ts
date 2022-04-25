@@ -33,7 +33,6 @@ export const Heading = styled(H5)`
 `
 
 export const JobOverviewHeading = styled(Text)`
-  font-size: 1rem;
   font-weight: bold;
   text-decoration: underline;
   text-transform: uppercase;

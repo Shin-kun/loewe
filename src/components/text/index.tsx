@@ -48,6 +48,11 @@ const Paragraph = styled(P)`
   opacity: 0;
   transform: translateX(-10px);
   transition: transform 1s, opacity 1s;
+  font-size: 1rem;
+
+  @media ${device.tablet} {
+    font-size: 1.5rem;
+  }
 
   @media ${device.laptop} {
     transform: translateX(-50px);
