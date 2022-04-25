@@ -22,21 +22,20 @@ function About() {
         </HeaderSection>
         <Text>
           I'm a Computer Science graduate from the University of the
-          Philippines, Cebu. During my college years, I was able to take on a
+          Philippines-Cebu. During my college years, I was able to take on a
           part-time job in developing web applications for small to medium
           enterprises which further strengthened my skills.
         </Text>
         <Text>
-          Since then, I am passionate, keen to details, innovative, & dependable
-          when given a task/project. Fast forward to 2022, I've focused my
-          expertise on various web & mobile technologies — React, React Native,
-          HTML/CSS etc.
+          Fast forward to 2022, I've focused my expertise on various web &
+          mobile technologies — React, React Native, HTML/CSS etc.
         </Text>
         <Text>
           Apart from my current full-time job, I've also applied for another
           part-time job in helping establish a startup company. I have since
           been its tech lead in the web & mobile frontend development.
         </Text>
+        <Text>I am passionate, keen to details, innovative, & dependable</Text>
       </MainSection>
     </Layout>
   )
