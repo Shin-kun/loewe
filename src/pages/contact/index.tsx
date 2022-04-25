@@ -6,11 +6,11 @@ import Layout from "src/components/layout"
 import H1 from "src/styled-components/common/H1"
 import P from "src/styled-components/common/P"
 import { InlineLink } from "src/styled-components/common/Link"
-import { colors, device } from "src/theme"
+import { device } from "src/theme"
 
 function Contact() {
   return (
-    <Container>
+    <Layout>
       <MainSection>
         <Title>Contact</Title>
         <Paragraph>
@@ -22,7 +22,7 @@ function Contact() {
           On the internet: <Link to="#">Github</Link>
         </Paragraph>
       </MainSection>
-    </Container>
+    </Layout>
   )
 }
 
@@ -36,14 +36,6 @@ const fromTop = keyframes`
     opacity: 1;
     transform: scaleY(1);
   }
-`
-
-const Container = styled(Layout)`
-  background-color: ${colors.primary};
-  transform-origin: 0% bottom;
-  animation: ${fromTop} 2s ease;
-  overflow: auto;
-  overflow-x: hidden;
 `
 
 const fromLeft = keyframes`

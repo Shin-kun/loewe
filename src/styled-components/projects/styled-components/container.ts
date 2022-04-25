@@ -28,7 +28,6 @@ export const JobOverviewSubSection = styled.div`
 
 export const MainContainer = styled(Layout)`
   background-color: ${colors.secondary};
-  overflow: auto;
 `
 
 export const MainSection = styled.section`

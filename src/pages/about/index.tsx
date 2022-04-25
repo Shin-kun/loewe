@@ -3,7 +3,6 @@ import styled from "styled-components/macro"
 import { keyframes } from "styled-components"
 
 import Layout from "src/components/layout"
-import { colors } from "src/theme"
 import H1 from "src/styled-components/common/H1"
 import H5 from "src/styled-components/common/H5"
 import Text from "src/components/text"
@@ -12,7 +11,7 @@ import { HeaderSection } from "src/styled-components/common/section"
 
 function About() {
   return (
-    <Container>
+    <Layout>
       <Seo title="About" />
       <MainSection>
         <HeaderSection>
@@ -36,7 +35,7 @@ function About() {
           web and mobile hybrid tech — React, React Native, HTML/CSS etc.
         </Text>
       </MainSection>
-    </Container>
+    </Layout>
   )
 }
 
@@ -50,26 +49,6 @@ const fromLeft = keyframes`
     opacity: 1;
     transform: translateX(0);
   }
-`
-
-const fromTop = keyframes`
-  from {
-    opacity: 0;
-    transform: scaleY(0);
-  }
-
-  to {
-    opacity: 1;
-    transform: scaleY(1);
-  }
-`
-
-const Container = styled(Layout)`
-  background-color: ${colors.primary};
-  transform-origin: 0% top;
-  animation: ${fromTop} 2s ease;
-  overflow: auto;
-  overflow-x: hidden;
 `
 
 const MainSection = styled.section`

@@ -10,7 +10,7 @@ import Seo from "src/components/seo"
 
 function Projects() {
   return (
-    <Container>
+    <Layout>
       <Seo title="Projects" />
       <MainSection>
         <Title>Projects</Title>
@@ -29,7 +29,7 @@ function Projects() {
           </Li>
         </Ul>
       </MainSection>
-    </Container>
+    </Layout>
   )
 }
 
@@ -91,25 +91,6 @@ const Link = styled(A)`
   @media ${device.tablet} {
     font-size: 3rem;
   }
-`
-
-const fromBottom = keyframes`
-  from {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`
-
-const Container = styled(Layout)`
-  background-color: ${colors.primary};
-  transform-origin: 0% bottom;
-  animation: ${fromBottom} 2s ease;
-  overflow: auto;
 `
 
 const MainSection = styled.section`

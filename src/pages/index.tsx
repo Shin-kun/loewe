@@ -10,7 +10,7 @@ import { colors, device } from "src/theme"
 
 const IndexPage = () => {
   return (
-    <Container>
+    <Layout>
       <Seo title="Home" />
       <Section>
         <Heading>Hi, I'm Michael Loewe Alivio</Heading>
@@ -18,38 +18,17 @@ const IndexPage = () => {
           A Frontend Web & Mobile Developer from Cebu, Philippines
         </SubHeading>
       </Section>
-    </Container>
+    </Layout>
   )
 }
 
-const fromBottom = keyframes`
+const fade = keyframes`
   from {
     opacity: 0;
-    transform: scaleY(0);
   }
 
   to {
     opacity: 1;
-    transform: scaleY(1);
-  }
-`
-
-const Container = styled(Layout)`
-  background-color: ${colors.primary};
-  transform-origin: 0% bottom;
-  animation: ${fromBottom} 2s ease;
-  overflow: auto;
-`
-
-const fromLeft = keyframes`
-  from {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
   }
 `
 
@@ -64,7 +43,7 @@ const Heading = styled(H1)`
   font-weight: bold;
   color: ${colors.hyperlink};
   font-size: 4rem;
-  animation: ${fromLeft} 1.5s ease;
+  animation: ${fade} 1.5s ease;
 
   @media ${device.laptop} {
     font-size: 7rem;
@@ -74,7 +53,7 @@ const Heading = styled(H1)`
 const SubHeading = styled(H5)`
   font-weight: normal;
   line-height: 1.5;
-  animation: ${fromLeft} 2.5s ease;
+  animation: ${fade} 1.5s ease;
 `
 
 export default IndexPage
