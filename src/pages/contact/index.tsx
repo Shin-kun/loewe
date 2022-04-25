@@ -6,7 +6,7 @@ import Layout from "src/components/layout"
 import H1 from "src/styled-components/common/H1"
 import P from "src/styled-components/common/P"
 import { InlineLink } from "src/styled-components/common/Link"
-import { device } from "src/theme"
+import { colors, device } from "src/theme"
 
 function Contact() {
   return (
@@ -17,9 +17,10 @@ function Contact() {
           Contact me here.
           <br />
           <br />
-          Email: <Link to="#">loewe.alivio@gmail.com</Link>
+          Email:{" "}
+          <Link to="mailto:loewe.alivio@gmail.com">loewe.alivio@gmail.com</Link>
           <br />
-          On the internet: <Link to="#">Github</Link>
+          On the internet: <Link to="https://github.com/Shin-kun">Github</Link>
         </Paragraph>
       </MainSection>
     </Layout>
